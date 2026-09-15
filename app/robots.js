@@ -1,0 +1,1 @@
+export default function robots(){const url=process.env.NEXT_PUBLIC_SITE_URL;return {rules:{userAgent:'*',...(url?{allow:'/'}:{disallow:'/'})},...(url?{sitemap:`${url.replace(/\/$/,'')}/sitemap.xml`}:{})}}
