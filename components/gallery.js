@@ -62,7 +62,7 @@ export function GalleryLightbox({ items, index, onClose, onChange }) {
           </button>
           <div>
             <h2>{item.title}</h2>
-            <p>Illustration placeholder · {index + 1} of {items.length}</p>
+            <p>Photo {index + 1} of {items.length}</p>
           </div>
           <button aria-label="Next image" onClick={() => onChange((index + 1) % items.length)}>
             <ArrowRight />
@@ -96,7 +96,7 @@ export default function GalleryGrid() {
         ))}
       </div>
       <p className="gallery-status" role="status">
-        {items.length} {items.length === 1 ? 'item' : 'items'} · School photographs awaiting upload
+        {items.length} {items.length === 1 ? 'photo' : 'photos'}
       </p>
       <div className="gallery-grid">
         {items.map((item, i) => (
@@ -115,7 +115,7 @@ export default function GalleryGrid() {
             </div>
             <span className="mini-label">{item.category}</span>
             <h2>{item.title}</h2>
-            <p>Illustration · photograph pending</p>
+            <p>School photograph</p>
           </button>
         ))}
       </div>
