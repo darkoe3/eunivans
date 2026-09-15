@@ -8,6 +8,10 @@ const description = 'Eunivans Educational Centre provides holistic education for
 
 export const metadata = {
 	metadataBase: new URL(origin),
+	icons: {
+		icon: '/images/logo.jpeg',
+		apple: '/images/logo.jpeg',
+	},
 	title: {
 		default: 'Eunivans Educational Centre | Integrity and Excellence',
 		template: '%s | Eunivans Educational Centre',
